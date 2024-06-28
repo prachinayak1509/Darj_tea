@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../styles.css";
 import Home from "./HomeComponent";
-
+import AllItemComponent from "./AllItemComponent";
+import AllMemComponent from "./AllMemComponent";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Footer from "./FooterComponent";
 
@@ -37,17 +38,14 @@ class Main extends Component {
   };
 
   render() {
-    
     return (
       <div className="App">
         {/* <Header /> */}
         <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Home/>}
-          />
-          </Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/allitem" element={<AllItemComponent />} />
+          <Route exact path="/allmem" element={<AllMemComponent />} />
+        </Routes>
         <Footer />
       </div>
     );
