@@ -5,6 +5,7 @@ import AllItemComponent from "./AllItemComponent";
 import AllMemComponent from "./AllMemComponent";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Footer from "./FooterComponent";
+import AllShipmentComponent from "./AllShipmentComponent";
 
 class Main extends Component {
   constructor(props) {
@@ -45,7 +46,15 @@ class Main extends Component {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/allitem" element={<AllItemComponent />} />
           <Route exact path="/allmem" element={<AllMemComponent />} />
+          <Route
+            exact
+            path="/allship"
+            element={
+              <AllShipmentComponent/>
+            }
+          />
         </Routes>
+        
         <Footer />
       </div>
     );

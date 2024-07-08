@@ -1,8 +1,9 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardTitle, CardBody, CardText } from "reactstrap";
 import { useEth } from "../contexts/EthContext";
+import "./AllMemComponent.css";
 
-function AllUserRender({ item }) {
+function AllItemRender({ item }) {
   var style1 = "bg-primary text-white";
   return (
     <Card className={style1}>
@@ -32,11 +33,11 @@ function AllItemComponent() {
             var resItems = await contract?.methods.Items(i).call();
             responseItems.push(resItems);
             }
-            console.log("Time end ", resItemCount, responseItems);
+            console.log("Time end item", resItemCount, responseItems);
             const AllItems = responseItems && responseItems.map((x) => {
               return (
                 <div key={x.itemId} className="card1">
-                  <AllUserRender user={x} />
+                  <AllItemRender item={x} />
                 </div>
               );
             });   
