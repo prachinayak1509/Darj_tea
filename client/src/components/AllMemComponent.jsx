@@ -6,11 +6,11 @@ import "./AllMemComponent.css";
 function AllUserRender({ user }) {
   var style1 = "bg-success text-white";
   return (
-    <Card className={style1}>
+    <Card className="card3">
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>
-        <CardTitle>User Name: {user?.userName}</CardTitle>
+        <CardTitle><b>User Name:</b> {user?.userName}</CardTitle>
         <CardText>Addr: {user?.addr}</CardText>
         <CardText>Pincode: {user?.pincode}</CardText>
         <CardText>Role: {user?.role}</CardText>
@@ -21,7 +21,7 @@ function AllUserRender({ user }) {
 function AllAdminRender({ admin }) {
   var style1 = "bg-primary text-white";
   return (
-    <Card className={style1}>
+    <Card className="card2">
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>

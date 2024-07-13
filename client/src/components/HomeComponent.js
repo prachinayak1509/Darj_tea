@@ -1,20 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import "../styles.css";
 import "./HomeComponent.css";
+import useWindowDimensions from "../hooks/UseWindowDimensions";
 
-class Home extends Component {
-  render() {
+function Home() {
+    const { height, width } = useWindowDimensions();
+    console.log("width", height, width);
+    let src = width < 600 ? "https://koraput.s3.ap-southeast-1.amazonaws.com/Koraput_portrait.mp4":  "https://koraput.s3.ap-southeast-1.amazonaws.com/Koraput_video.mp4";
     return (
       <React.Fragment>
-        <br />
-        <div className="one">
-          <h2>Koraput Coffee Management System</h2>
-          <br />
-          
+        <div id="myVideo">
+            <video autoPlay loop muted id="myVideo">
+              <source src={src} type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
         </div>
       </React.Fragment>
     );
-  }
 }
 
 export default Home;

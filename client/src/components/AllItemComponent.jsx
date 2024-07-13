@@ -3,10 +3,11 @@ import { Card, CardTitle, CardBody, CardText } from "reactstrap";
 import { useEth } from "../contexts/EthContext";
 import "./AllMemComponent.css";
 
+
 function AllItemRender({ item }) {
   var style1 = "bg-primary text-white";
   return (
-    <Card className={style1}>
+    <Card className="card2">
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>

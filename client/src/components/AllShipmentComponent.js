@@ -6,7 +6,7 @@ import "./AllMemComponent.css";
 function AllItemRender({ shipment }) {
   var style1 = "bg-primary text-white";
   return (
-    <Card className={style1}>
+    <Card className="card2">
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>

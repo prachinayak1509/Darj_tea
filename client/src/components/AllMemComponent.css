@@ -4,6 +4,15 @@
     float: left;
     width: 81%;
     margin-bottom: 7%;
+    
+  }
+  .card2{
+    background-color: #91b6a1;
+    border-radius: 30px;
+  }
+  .card3{
+    background-color:#84abcb ;
+    border-radius: 30px;
   }
   
   .row1,
