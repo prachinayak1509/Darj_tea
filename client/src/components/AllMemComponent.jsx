@@ -11,9 +11,9 @@ function AllUserRender({ user }) {
       <i className="fa fa-user fa-2x"></i>
       <CardBody>
         <CardTitle><b>User Name:</b> {user?.userName}</CardTitle>
-        <CardText>Addr: {user?.addr}</CardText>
-        <CardText>Pincode: {user?.pincode}</CardText>
-        <CardText>Role: {user?.role}</CardText>
+        <CardText><b>Addr:</b> {user?.addr}</CardText>
+        <CardText><b>Pincode:</b> {user?.pincode}</CardText>
+        <CardText><b>Role:</b> {user?.role}</CardText>
       </CardBody>
     </Card>
   );
@@ -25,10 +25,10 @@ function AllAdminRender({ admin }) {
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>
-        <CardTitle>Admin Name: {admin?.adminName}</CardTitle>
-        <CardText>Admin Addr: {admin?.adminAddr}</CardText>
-        <CardText>Admin Aadhar: {admin?.adminAadharNo}</CardText>
-        <CardText>Admin Role: {admin?.role}</CardText>
+        <CardTitle><b>Admin Name:</b> {admin?.adminName}</CardTitle>
+        <CardText><b>Admin Addr:</b> {admin?.adminAddr}</CardText>
+        <CardText><b>Admin Aadhar:</b> {admin?.adminAadharNo}</CardText>
+        <CardText><b>Admin Role:</b> {admin?.role}</CardText>
       </CardBody>
     </Card>
   );

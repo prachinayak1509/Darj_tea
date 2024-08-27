@@ -10,11 +10,11 @@ function AllItemRender({ shipment }) {
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>
-        <CardTitle>Shipment Status: {shipment?.shipmentStatus}</CardTitle>
-        <CardText>Shipment TotalAmt: {shipment?.totalAmt}</CardText>
-        <CardText>Shipment Payment: {shipment?.payment}</CardText>
-        <CardText>MADDR: {shipment?.maddress}</CardText>
-        <CardText>CADDR: {shipment?.caddress}</CardText>
+        <CardTitle><b>Shipment Status:</b> {shipment?.shipmentStatus}</CardTitle>
+        <CardText><b>Shipment TotalAmt:</b> {shipment?.totalAmt}</CardText>
+        <CardText><b>Shipment Payment:</b> {shipment?.payment}</CardText>
+        <CardText><b>MADDR:</b> {shipment?.maddress}</CardText>
+        <CardText><b>CADDR:</b>{shipment?.caddress}</CardText>
       </CardBody>
     </Card>
   );

@@ -14,7 +14,10 @@
     background-color:#84abcb ;
     border-radius: 30px;
   }
-  
+  .title1{
+    font-family: "Audiowide", cursive;
+	color: #333;
+  }
   .row1,
   .row2 {
     margin-left: 15%;

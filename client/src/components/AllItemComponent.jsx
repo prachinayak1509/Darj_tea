@@ -11,11 +11,11 @@ function AllItemRender({ item }) {
       <br />
       <i className="fa fa-user fa-2x"></i>
       <CardBody>
-        <CardTitle>Item Name: {item?.description}</CardTitle>
-        <CardText>Item Description: {item?.description}</CardText>
-        <CardText>Item price: {item?.price}</CardText>
-        <CardText>MADDR: {item?.maddress}</CardText>
-        <CardText>CADDR: {item?.caddress}</CardText>
+        <CardTitle><b>Item Name:</b> {item?.description}</CardTitle>
+        <CardText><b>Item Description:</b> {item?.description}</CardText>
+        <CardText><b>Item price:</b> {item?.price}</CardText>
+        <CardText><b>MADDR:</b> {item?.maddress}</CardText>
+        <CardText><b>CADDR:</b> {item?.caddress}</CardText>
       </CardBody>
     </Card>
   );
@@ -52,7 +52,7 @@ function AllItemComponent() {
     return (
       <div>
         <br />
-        <h2>All Items</h2>
+        <h2 className="title1">All Items</h2>
         <br />
         <div className="row2">{items}</div>
         <br />
