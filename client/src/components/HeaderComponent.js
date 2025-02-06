@@ -63,7 +63,7 @@ class Header extends Component{
                 <Navbar dark expand="md header">
                     <div className="container justify-center">
                         <NavbarToggler onClick={this.toggleNav}/>
-                        <NavbarBrand className="mr-auto title" >Coco Fresh Taste
+                        <NavbarBrand className="mr-auto title" >Darj-Tea
                         </NavbarBrand>
                         <Collapse isOpen = {this.state.isNavOpen} navbar>
                             <Nav navbar className="m-auto"> 
